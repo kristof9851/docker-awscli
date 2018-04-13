@@ -12,6 +12,6 @@ docker run \
   -e AWS_SECRET_ACCESS_KEY="$AWS_SECRET_ACCESS_KEY" \
   -it \
   -v $(pwd):/data \
-  docker-awscli \
+  kristof117/docker-awscli \
   bash
 ```
