@@ -1,17 +1,16 @@
 # Dockerised AWS CLI on Ubuntu 18.04
 
-# How to build it locally
+## How to build it locally
 ```
-docker build -t docker-awscli .
+./build.sh
 ```
 
-# How to run it
+## How to run it using local image
 ```
-docker run \
-  -e AWS_ACCESS_KEY_ID="$AWS_ACCESS_KEY_ID" \
-  -e AWS_SECRET_ACCESS_KEY="$AWS_SECRET_ACCESS_KEY" \
-  -it \
-  -v $(pwd):/data \
-  kristof117/docker-awscli \
-  bash
+./run-local.sh
+```
+
+## How to run it using remote image
+```
+./run-remote.sh
 ```
